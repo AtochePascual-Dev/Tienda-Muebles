@@ -1,3 +1,8 @@
+:root {
+  /* Colors */
+  --color-principal: #037bc0;
+}
+
 /* * GLOBALES */
 * {
   margin: 0;
@@ -23,15 +28,21 @@ h4 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
+}
+
+@media (min-width:768px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: 3rem;
 }
 
 h3 {
-  font-size: 3.6rem;
+  font-size: 2.6rem;
 }
 
 h4 {
@@ -55,4 +66,21 @@ ul {
 [class*="-container"] {
   width: min(95%, 120rem);
   margin: 0 auto;
+}
+
+.seccion {
+  padding: 5rem 0;
+}
+
+/* *HEADER */
+.header {
+  padding: 3rem 0;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.header__span {
+  color: var(--color-principal);
 }
