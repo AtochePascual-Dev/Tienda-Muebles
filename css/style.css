@@ -140,23 +140,23 @@ ul {
 }
 
 /* * Sobre-Nosotros */
-.sobre-nosotros__title {
+.categoria__title {
   text-align: center;
 }
 
-.sobre-nosotros__content {
+.categoria__content {
   display: grid;
   justify-content: center;
   gap: 2rem;
 }
 
 @media (min-width:768px) {
-  .sobre-nosotros__content {
+  .categoria__content {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.sobre-nosotros__link {
+.categoria__link {
   padding: 2rem;
   display: block;
   text-align: center;
@@ -166,11 +166,16 @@ ul {
 }
 
 @media (min-width:768px) {
-  .sobre-nosotros__link:hover {
+  .categoria__link:hover {
     color: white;
   }
 
-  .sobre-nosotros__link:hover {
+  .categoria__link:hover {
     background-color: var(--color-principal);
   }
+}
+
+/* * Main */
+.main__title {
+  text-align: center;
 }
