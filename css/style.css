@@ -78,9 +78,53 @@ ul {
 }
 
 .header__title {
+  margin: 0;
   text-align: center;
 }
 
 .header__span {
   color: var(--color-principal);
+}
+
+/* * Menu */
+.contenedor {
+  border-top: 1px solid #e1e1e1;
+}
+
+.menu {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width:768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.menu__link {
+  color: rgb(15, 15, 15);
+}
+
+.menu__link--select {
+  color: var(--color-principal);
+}
+
+/* * Hero */
+.hero {
+  height: 50rem;
+  background-image: url("../img/principal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width:768px) {
+  .hero {
+    height: 55rem;
+  }
 }
