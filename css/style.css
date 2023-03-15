@@ -22,6 +22,7 @@ html {
 body {
   min-width: 32rem;
   font-size: 1.6rem;
+  line-height: 2;
   font-family: var(--fuente-principal);
 }
 
@@ -139,7 +140,7 @@ ul {
   }
 }
 
-/* * Sobre-Nosotros */
+/* * Categoria */
 .categoria__title {
   text-align: center;
 }
@@ -175,7 +176,42 @@ ul {
   }
 }
 
-/* * Main */
-.main__title {
+/* * Sobre-Nosotros */
+.sobre-nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3rem;
+  background-image: linear-gradient(to bottom, transparent 50%, var(--color-principal) 50%, var(--color-principal) 100%), url("../img/nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, 75rem;
+  background-position: center top;
+  text-align: justify;
+  color: white;
+}
+
+@media (min-width:768px) {
+  .sobre-nosotros {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: linear-gradient(to right, transparent 50%, var(--color-principal) 50%, var(--color-principal) 100%), url("../img/nosotros.jpg");
+    background-size: 100%, 80rem;
+    background-position: left top;
+    text-align: justify;
+  }
+}
+
+.sobre-nosotros__content {
+  padding: 2rem;
+  grid-row: 2 / 3;
+}
+
+@media (min-width:768px) {
+  .sobre-nosotros__content {
+    max-width: 50rem;
+    grid-column: 2/3;
+  }
+}
+
+.sobre-nosotros__title {
   text-align: center;
 }
