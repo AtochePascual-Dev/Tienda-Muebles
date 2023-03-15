@@ -356,3 +356,21 @@ ul {
   font-weight: 700;
   text-align: center;
 }
+
+/* *Nosotros-Page */
+.nosotros {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width:768px) {
+  .nosotros {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+}
+
+.nosotros__img {
+  width: 100%;
+  height: auto;
+}
