@@ -453,3 +453,24 @@ ul {
 .blog-aside ul {
   list-style: inside;
 }
+
+/* * Galeria */
+
+.galeria {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width:768px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.galeria__img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
