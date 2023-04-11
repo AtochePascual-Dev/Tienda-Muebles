@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="La mejor tienda para comprar muebles">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <h1 class="header__title">Tienda <span class="header__span"> Muebles</span></h1>
+  </header>
+
+
+  <div class="contenedor">
+    <nav class="menu menu-container">
+      <a class="menu__link" href="index.html">Inicio</a>
+      <a class="menu__link" href="nosotros.html">Nosotros</a>
+      <a class="menu__link" href="tienda.html">Tienda</a>
+      <a class="menu__link" href="blog.html">Blog</a>
+      <a class="menu__link" href="galeria.html">Galería</a>
+      <a class="menu__link  menu__link--select" href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+
+
+  <main class="main seccion main-container">
+    <h2 class="main__title">Contacto</h2>
+
+    <for class="formulario">
+
+      <fieldset class="formulario__fieldset"> <!-- Agrupa campos relacionados de un formulario -->
+        <legend class="formulario__legennd">Tus Datos</legend> <!-- Texto que describe el grupo -->
+
+        <div class="formulario__campo">
+          <label for="nombre" class="formulario__label">Nombre :</label>
+          <input id="nombre" class="formulario__input" type="text" placeholder="Tu nombre">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="asunto" class="formulario__label">Asunto :</label>
+          <input id="asunto" class="formulario__input" type="text" placeholder="Tu asunto">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="telefono" class="formulario__label">Telefono :</label>
+          <input id="telefono" class="formulario__input" type="tel" placeholder="9525**">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="email" class="formulario__label">Email :</label>
+          <input id="email" class="formulario__input" type="email" placeholder="ejemplo@ejemplo.com">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="mensaje" class="formulario__label">Mensaje :</label>
+          <textarea id="mensaje" rows="3"></textarea>
+        </div>
+      </fieldset>
+
+
+      <fieldset class="formulario__fieldset"> <!-- Agrupa campos relacionados de un formulario -->
+        <legend class="formulario__legennd">País</legend> <!-- Texto que describe el grupo -->
+
+        <div class="formulario__campo">
+          <label for="pais" class="formulario__label">País :</label>
+          <select id="pais">
+            <option value="" selected disabled>-- Selecciones --</option>
+            <option value="pr">Perú</option>
+            <option value="pr">Argentina</option>
+            <option value="pr">España</option>
+            <option value="pr">Italia</option>
+            <option value="pr">Mexico</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="formulario__fieldset"> <!-- Agrupa campos relacionados de un formulario -->
+        <legend class="formulario__legennd">información extra</legend> <!-- Texto que describe el grupo -->
+
+        <div class="formulario__campo">
+          <label for="cliente" class="formulario__label">Cliente :</label>
+          <input class="formulario__input--radio" type="radio" id="cliente" name="tipo" value="proveedor">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="proveedor" class="formulario__label">Provedor :</label>
+          <input class="formulario__input--radio" type="radio" id="proveedor" name="tipo" value="proveedor">
+        </div>
+
+        <div class="formulario__campo">
+          <label for="categoria" class="formulario__label">Categotia :</label>
+
+          <input list="categoria">
+          <datalist class="formulario__input" id="categoria">
+            <option value="oficina"></option>
+            <option value="recamara"></option>
+            <option value="televisor"></option>
+            <option value="cocina"></option>
+            <option value="exterior"></option>
+          </datalist>
+        </div>
+      </fieldset>
+
+      <input class="formulario__btn" type="submit" value="Enviar formulario">
+    </for>
+
+  </main>
+
+  <footer class="footer seccion">
+    <div class="footer__grid footer-container">
+      <div>
+        <h3 class="footer__title">Categoías</h3>
+        <nav class="footer__menu">
+          <a class="footer__link" href="#">Cocina</a>
+          <a class="footer__link" href="#">Oficina</a>
+          <a class="footer__link" href="#">Jardin</a>
+          <a class="footer__link" href="#">Cochera</a>
+          <a class="footer__link" href="#">Dormitorios</a>
+        </nav>
+      </div> <!-- fin box -->
+
+      <div>
+        <h3 class="footer__title">Sobre Nosotros</h3>
+        <nav class="footer__menu">
+          <a class="footer__link" href="#">Nuestra Historia</a>
+          <a class="footer__link" href="#">Oficina</a>
+          <a class="footer__link" href="#">Jardin</a>
+          <a class="footer__link" href="#">Cochera</a>
+          <a class="footer__link" href="#">Dormitorios</a>
+        </nav>
+      </div> <!-- fin box -->
+
+      <div>
+        <h3 class="footer__title">Soporte</h3>
+        <nav class="footer__menu">
+          <a class="footer__link" href="#">Preguntas Frecuentes</a>
+          <a class="footer__link" href="#">Ayuda en Linea</a>
+          <a class="footer__link" href="#">Confianza y Seguridad</a>
+        </nav>
+      </div> <!-- fin box -->
+    </div>
+
+    <p class="footer__copy">Todos los derechos reservados &copy;</p>
+  </footer>
+</body>
+
+</html>
