@@ -19,4 +19,4 @@ No se ha recibido contribuciones hasta este momento.
 
 ## preview
 
-![](https://i.imgur.com/9oSpOmv.png)
+![](https://i.imgur.com/s2PMNDI.png)
